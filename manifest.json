@@ -3,14 +3,11 @@
   "short_name": "schimverb",
   "manifest_version": 2,
   "description": "Replace Schimanski with Verboten in your browser",
-  "version": "0.1",
+  "version": "0.2",
 
   "browser_action": {
     "default_icon": "v_icon.png",
     "default_title": "Schimanski Replacer"
-  },
-  "background": {
-    "page": "background.html"
   },
   "content_scripts": [
     {
