@@ -1,25 +1,19 @@
 {
-  "name": "Schimanski Replacer",
-  "short_name": "schimverb",
+  "name": "Fuck Tumblr Ads",
+  "short_name": "bootumblads",
   "manifest_version": 2,
-  "description": "Replace Schimanski with Verboten in your browser",
+  "description": "Hide Tumblr ads in your browser feed",
   "version": "0.2",
-
-  "browser_action": {
-    "default_icon": "v_icon.png",
-    "default_title": "Schimanski Replacer"
-  },
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "*://*.tumblr.com/*"
       ],
-        "js": ["hideSchim.js"]
+        "js": ["hideTumblrAds.js"]
     }
   ],
   "permissions": [
     "activeTab",
-    "storage",
     "https://ajax.googleapis.com/"
   ]
 }
